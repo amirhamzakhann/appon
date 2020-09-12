@@ -1,0 +1,838 @@
+/* Theme Name: Appon.
+Theme Design: Amir Hamza Shuvo Khan.
+Theme Created By: Amir Hamza Shuvo Khan. */
+
+/* Common Css Code Start Here */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style-type: none;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Common Css Code End Here */
+
+/* Header Css Code Start Here */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 999;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    transition: all linear .3s;
+    position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 1px;
+    content: '';
+    background: #744fa0;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #744fa0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    opacity: 1;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0px 0px 0px 40px;
+}
+
+.trial {
+    margin-left: 30px;
+}
+
+.trial a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px 20px;
+    background: #744fa0;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    border-radius: 5px;
+}
+
+.trial a:hover {
+    background: #4c1b88;
+}
+/* Header Css Code End Here */
+
+/* Banner Css Code Start Here */
+
+#banner {
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all linear .3s;
+}
+
+.header-bg {
+    background: #333333;
+    animation: menu 2s;
+}
+
+@keyframes menu {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0px;
+    }
+}
+
+.banner-overly {
+    background: rgb(0, 0, 0,0.7);
+    padding-top: 235px;
+    padding-bottom: 122px;
+}
+
+.banner-item h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 56px;
+    text-transform: uppercase; 
+    padding-bottom: 30px;
+}
+
+.banner-item span {
+    color: #744fa0;
+}
+
+.banner-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 32px;
+    position: relative;
+}
+
+.banner-item h4::after {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+    width: 200px;
+    height: 1px;
+    background: #f1f1f1;
+    content: '';
+}
+
+.banner-item p {
+    padding-top: 60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 60px;
+}
+
+.and-apple a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 18px;
+    padding: 15px 30px;
+    background: #f1f1f1;
+    transition: all linear .3s;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.and-apple i {
+	font-size: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+	transition: all linear .3s;
+}
+
+.and-apple a:hover {
+    background: #744fa0;
+    color: #ffffff;
+}
+
+.and-apple i:hover {
+    color: #ffffff;
+}
+/* Banner Css Code End Here */
+
+/* About Css Code Start Here */
+
+#about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about-text {
+    margin-top: 50px;
+}
+
+.about-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.about-text p {
+    padding-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.about-text h4 {
+    padding-top: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* About Css Code End Here */
+
+/* Fetures Css Code Start Here */
+
+#fetures {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: #f1f1f1;
+}
+
+.fetures-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.feture-content {
+    margin-top: 30px;
+}
+
+.feture-content-left {
+    margin-bottom: 30px;
+}
+
+.feture-content-left h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #353535;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.feture-content-left i {
+    font-size: 33px;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: all linear .3s;
+}
+
+.feture-content-left p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #777777;
+	font-size: 14px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #353535;
+    transition: all linear .3s;
+}
+
+.feture-content-left:hover h3 {
+    color: #744fa0;
+}
+
+.feture-content-left:hover p {
+    color: #744fa0;
+    border-bottom: 1px solid #744fa0;
+}
+
+.feture-content-left:hover i {
+    color: #744fa0;
+}
+
+.feture-content-right {
+    margin-top: 70px;
+}
+
+.feture-content-right h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.feture-content-right h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+
+.feture-content-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+}
+/* Fetures Css Code End Here */
+
+/* Screenshot Css Code Start Here */
+
+#screenshot {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.screenshot-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.screenshot-slider {
+    margin-top: 30px;
+}
+/* Screenshot Css Code End Here */
+
+/* Video Css Code Start Here */
+
+.video-text-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+/* Video Css Code End Here */
+
+/* Video Bg Css Code Start Here */
+
+#video-bg {
+    margin-top: 30px;
+    background: url(../images/video-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-overly {
+    background: rgb(0, 0, 0,0.6);
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+
+.video-btn i {
+    font-size: 70px;
+    color: #ffffff;
+}
+/* Video Bg Css Code End Here */
+
+/* Price Css Code Start Here */
+
+#price {
+    padding-top: 80px;
+}
+
+.price-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.price-plan-item {
+    margin-top: 30px;
+}
+
+.plan {
+    padding: 24px 0px;
+    background: #f1f1f1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all linear .3s;
+}
+
+.plan h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #353535;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.per-month-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #f1f1f1;
+}
+
+.round {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    border: 3px solid #f1f1f1;
+}
+
+.round-text {
+    margin-top: 5px;
+}
+
+.round-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 18px;
+}
+
+.round-text span {
+    font-size: 47px;
+}
+
+.round-text p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #555555;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.plan-end {
+    padding-top: 35px;
+    padding-bottom: 49px;
+    background: #f1f1f1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.plan-end p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 14px;
+    padding-bottom: 15px; 
+}
+
+.sign-up {
+	margin-top: -18px;
+}
+
+.sign-up a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    color: #353535;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    background: #ffffff;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    transition: all linear .3s;
+}
+
+.price-plan-item:hover .plan {
+    background: #744fa0;
+}
+
+.price-plan-item:hover .plan h3 {
+    color: #ffffff;
+}
+
+.price-plan-item:hover .sign-up a {
+    background: #744fa0;
+    color: #ffffff;
+}
+/* Price Css Code End Here */
+
+/* Team Css Code Start Here */
+
+#team {
+    padding-top: 80px;
+}
+
+.team-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.team-main {
+    margin-top: 115px;
+}
+
+.team-image {
+    position: relative;
+}
+
+.team-image-overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.7);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+
+.team-image-overly i {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    font-size: 23px;
+    color: #353535;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    background: #f1f1f1;
+    margin-right: 15px;
+    transition: all linear .3s;
+}
+
+.team-image-overly i:hover {
+    background: #1da1f2;
+    color: #ffffff;
+}
+
+.team-text {
+    padding: 30px 65px;
+    border: 1px solid #cccccc;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: all linear .3s;
+    opacity: 0;
+}
+
+.team-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.team-text h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.team-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.team-item:hover .team-image-overly {
+    opacity: 1;
+}
+
+.team-item:hover .team-text {
+    opacity: 1;
+}
+
+.slick-center .team-image-overly {
+    opacity: 1;
+}
+
+.slick-center .team-text {
+    opacity: 1;
+}
+/* Team Css Code End Here */
+
+/* User FeedBack Text Css Code Start Here */
+
+#userfeedtext {
+    padding-top: 80px;
+}
+
+.userfeedtext-text h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}  
+/* User FeedBack Text Css Code End Here */
+
+/* FeedBack Css Code Start Here */
+
+#feedback {
+    background: url(../images/feedback-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+}
+
+.feedback-overly {
+    background: rgb(0, 0, 0,0.7);
+    padding-top: 30px;
+    padding-bottom: 77px;
+}
+
+.feedback-text-item {
+    padding: 33px 68px 30px 68px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+.feedback-text-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+
+.star i {
+    font-size: 13px;
+    color: #744fa0;
+    padding-bottom: 10px;
+}
+
+.feedback-text-item h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.feedback-text-item h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #555555;
+    font-size: 14px;
+}
+
+.feed-image-slider {
+    margin-top: 30px;
+}
+
+.feedback-image-slider {
+    margin-top: 30px;
+    margin-left: 160px;
+}
+/* FeedBack Css Code End Here */
+
+/* Touch Css Code Start Here */
+
+#touch {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.touch-title h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #353535;
+    font-size: 24px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.input-field input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+}
+
+.input-textarea {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.input-textarea textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #777777;
+    font-size: 14px;
+    border: none;
+    width: 100%;
+}
+
+.submit-btn {
+    margin-top: 30px;
+}
+
+.submit-btn a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fefefe;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #744fa0;
+    border-radius: 3px;
+    display: inline-block;
+    transition: all linear .3s;
+}
+
+.submit-btn a:hover {
+    background: #4c1b88;
+}
+/* Touch Css Code End Here */
+
+/* Footer Css Code Start Here */
+
+#footer {
+    background: #353535;
+    padding-top: 32px;
+    padding-bottom: 30px;
+}
+
+.footer-image {
+    padding-bottom: 30px;
+}
+
+.footer-icon {
+    padding-bottom: 30px;
+}
+
+.footer-icon i {
+    font-size: 25px;
+    color: #353535;
+    width: 50px;
+    height: 50px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 15px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+.footer-icon i:hover {
+    background: #1da1f2;
+    color: #ffffff;
+}
+
+.end-text h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+.end-text span {
+    color: #744fa0;
+    text-transform: uppercase;
+}
+/* Footer Css Code End Here */
+
+/* Common Css Code Start Here */
+
+/* Common Css Code End Here */
